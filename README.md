@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-	<img src="readme_files/Intro.png"/>
+	<img src="global/readme_files/Intro.png"/>
 </p>
 
 
