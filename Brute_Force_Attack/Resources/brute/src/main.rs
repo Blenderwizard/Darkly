@@ -10,6 +10,7 @@ use std::thread;
 #[async_recursion]
 #[allow(unused_must_use)]
 async fn brute(url: &str) -> Result<(), Box<dyn std::error::Error>> {
+	println!("{}", url);
 	let re = Regex::new(r"[0-9a-f]{32}").unwrap();
 	let res = reqwest::get(url)
 		.await?
