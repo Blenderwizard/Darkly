@@ -15,4 +15,4 @@ A hidden form input with a name `"mail"` and a set value of `"webmaster@borntose
 Submiting the form with a modified adress gets us the flag.
 
 ## Potential Patches
-Verifying and parsing data on the backend is a good way to make sure that your forms haven't been tampered with on the frontend. You can verify for each route where forms post to checking if "hidden" data hasn't been changed, or simply ignoring what "hidden" values are given in the request and using the known value. 
+Verifying and parsing data on the backend is a good way to make sure that your forms haven't been tampered with on the frontend. You can verify for each route where forms post to checking if "hidden" data hasn't been changed, or simply ignoring what "hidden" values are given in the request and using known/expected values. 
