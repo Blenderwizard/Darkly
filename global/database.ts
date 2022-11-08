@@ -14,7 +14,7 @@ export interface db {
 		"Commentaire": string, 
 		"coubtersign": string, // md5 hash
 	},
-	"guestbook": { //
+	"guestbook": { // comments
 		"id_comment": number,
 		"comment": string,
 		"name": string,
@@ -25,7 +25,7 @@ export interface db {
 		"title": string,
 		"comment": string,
 	},
-	"vote_dbs": {
+	"vote_dbs": { // votes
 		"vote": any, // I have no idea
 		"nb_vote": number,
 		"subject": string,
