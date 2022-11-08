@@ -2,13 +2,12 @@
 
 ## Writeup
 
-Using [Daniel Miessler's Security List](https://github.com/danielmiessler/SecLists.git) and [epi052's feroxbuster](https://github.com/epi052/feroxbuster), we can find `robots.txt`:
+Using [Daniel Miessler's Security List](https://github.com/danielmiessler/SecLists.git) and [epi052's feroxbuster](https://github.com/epi052/feroxbuster), we find the `/admin` route and `robots.txt`:
 ```
 User-agent: *
 Disallow: /whatever
 Disallow: /.hidden
 ```
-We  also find an `/admin` route.
 
 In the `/whatever` folder, a single `htpasswd` file is present. Telling us that the server hosting route is an Apache Server and that the username and password to access `/admin` are found in this file.
 
