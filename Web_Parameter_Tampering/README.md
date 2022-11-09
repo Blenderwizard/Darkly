@@ -10,7 +10,7 @@ On the recover password page we have a simple form with a single `"Submit"` butt
 </form>
 <!-- ... -->
 ```
-A hidden form input with a name `"mail"` and a set value of `"webmaster@borntosec.com"`. We ca modifty value of mail to whatever we want, alowing us to change where the recovery email would be sent.
+A hidden form input with a name `"mail"` and a set value of `"webmaster@borntosec.com"`. We can modifty value of mail to whatever we want, alowing us to change where the recovery email would be sent.
 
 Submiting the form with a modified adress gets us the flag.
 
