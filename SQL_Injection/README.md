@@ -1,9 +1,9 @@
 # [SQL_Injection](https://owasp.org/www-community/attacks/SQL_Injection)
 
 ## WriteUp
-On the `member` page, there is a prompt that allows us to search for a user within the database by specifying their ID. Entering a number between 1 and 4 renders the first and last name of the user on the webpage.
+On the `member` page, there is a prompt that allows us to search for a user within the database by specifying their ID. Entering a number between 1 and 4 displays the first and last name of the user on the webpage.
 
-Checking for Sql injections, we can pass the prompt `1 OR 1 = 1`. This causes all members to be rendered out, meaning we can preform SQL Injections on the database. To gather data on the all the tables within the database and their columns, let use the prompt `1 OR 1 = 1 UNION SELECT table_name,column_name FROM information_schema.columns`.
+Checking for Sql injections, we can pass the prompt `1 OR 1 = 1`. This causes all members to be displayed, meaning we can preform SQL Injections on the database. To gather data on the all the tables within the database and their columns, let use the prompt `1 OR 1 = 1 UNION SELECT table_name,column_name FROM information_schema.columns`.
 
 This causes the webapp to render out all tables within the database and their colums, here is a simplified view:
 ``` ts
