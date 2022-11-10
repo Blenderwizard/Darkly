@@ -1,7 +1,7 @@
 # [SQL_Injection](https://owasp.org/www-community/attacks/SQL_Injection)
 
 ## WriteUp
-On route `index.php?page=searchimg`, there is a prompt that allows us to search for an image within the database by specifying it's ID. Entering a number 1,2,3 and 5 displays thetitle and a url of the image.
+On route `index.php?page=searchimg`, there is a prompt that allows us to search for an image within the database by specifying it's ID. Entering a number between 1 and 5 displays thetitle and a url of the image.
 
 Checking for Sql injections, we can pass the prompt `1 OR 1 = 1`. This causes all images to be displayed, meaning we can preform SQL Injections on the database. To gather data on the all the tables within the database and their columns, let use the prompt `1 OR 1 = 1 UNION SELECT table_name,column_name FROM information_schema.columns`.
 
