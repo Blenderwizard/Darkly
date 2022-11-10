@@ -15,7 +15,7 @@ In the `/whatever` folder, a single `htpasswd` file is present. Telling us that 
 ```
 root:437394baff5aa33daa618be47b75cb49
 ```
-It's format is simular to what is found in `/etc/passwd`, folowing the pattern of `username:hashed_password`. Using a md5 decryptor, we can find `root`'s password `qwerty123@`.
+It's format is simular to what is found in an `/etc/passwd` file. Folowing the pattern of `username:hashed_password`. Using a md5 decryptor, we can find `root`'s password `qwerty123@`.
 
 ## Possible Patches
 
