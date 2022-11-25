@@ -1,5 +1,5 @@
 <h1 align="center" style="border-bottom: none; margin-bottom: 0;">
-    Darkly: By <a href="https://github.com/Blenderwizard">Jolan "Blenderwizard" Rathelot</a>
+    Darkly: By <a href="https://github.com/Blenderwizard">Jolan "Blenderwizard" Rathelot</a> and <a href="https://github.com/louchebem06">bledda</a>
 </h1>
 
 <p align="center">
