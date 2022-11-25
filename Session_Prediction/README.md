@@ -12,4 +12,4 @@ Decrypting the hash with a tool like [dcode](https://decode.fr/md5-hash) we can 
 
 ## Potential Patch
 
-Using a more secure token strategy for sessions like Json Web Tokens would secure the site much more than simply using MD5. Part of the JWT's is signed by the server, making very hard for users to change the token without invalidating it. Not to mention but the admin permisions should be stored on the backend in a database, not the front.
+Using a more secure token strategy for sessions like Json Web Tokens would secure the site much more than simply using MD5. Part of the JWT's is signed by the server, making very hard for users to change the token without invalidating it. Not to mention but the admin permisions should be stored in a database, not in the form of a token or cookie.
